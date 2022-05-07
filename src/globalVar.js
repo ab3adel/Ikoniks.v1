@@ -1,0 +1,1 @@
+global.apiUrl = 'http://167.172.186.41/'

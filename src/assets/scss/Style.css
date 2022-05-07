@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./Raleway.ttf') format('ttf'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('./Raleway.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+  @font-face {
+    font-family: 'Raleway1';
+    src: url('./Raleway1.ttf') format('ttf'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('./Raleway1.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+  body{
+    font-family: 'Raleway1';
+  }
+  

@@ -1,0 +1,176 @@
+.section{
+    background-color: #303030;
+}
+.section.ourServices .ServicConT{
+position: relative;
+/* height: 250px; */
+}
+ 
+ 
+.service-item {
+    width: 100%;
+    height: 280px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #03aac1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ .service-item img {
+    position: relative;
+    top:70px;
+    display: inline-block;
+    margin-bottom: 40px;
+    /* padding: 10px ; */
+    background: #303030;
+   color: #03aac1;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    /* font-size: 48px; */
+    height: 80px;
+    width: 80px;
+    max-width: 100%;
+}
+.service-item h5 {
+    color:  #fff ;
+    position: relative;
+    top: 60px ;
+    -webkit-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -moz-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -o-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -ms-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    font-family: 'Dosis',arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.service-item .service-desc {
+    width: 80%;
+    margin: 0 auto;
+    color: #03aac1;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    filter: alpha(opacity=0);
+    font-family:'Raleway1' ;
+    -webkit-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -moz-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -o-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -ms-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+ .service-item:hover {
+    border-color: #fff  ;
+}
+.service-item:hover img {
+    top: -35px ;
+}
+.service-item:hover h5 {
+    top: -35px ;
+}
+.service-item:hover .service-desc {
+    opacity: 1;
+    -ms-filter: none;
+    font-weight: 300;
+    filter: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.text-center {
+    text-align: center!important;
+    place-content: center;
+}
+.service-item .service-desc p.textDesc {
+position: relative;
+overflow: hidden;
+width: 100%;
+display: -webkit-box;
+-webkit-line-clamp: 5;
+-webkit-box-orient: vertical;
+-webkit-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+-moz-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+-o-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+-ms-transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+transition: all .5s cubic-bezier(.68,-.55,.265,1.55);
+ 
+}
+.sectionTitle{
+    color: white;
+    padding: 2.5rem 0 1rem;
+    padding-top: 94px;
+    font-family:'Raleway1'
+}
+@media (max-width: 767px)
+{
+    .service-item .service-desc p {
+        font-size: 15px;
+    }
+    .service-item {
+        margin: 25px 0;
+        border: none;
+        height: fit-content;
+      
+    }
+    .service-item img {
+        top: -30px;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    .service-item h5 {
+        top: -24px ;
+            margin-bottom: -21px ;
+    }
+    .service-item .service-desc {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+#section_about{
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+}
+.pb-40 {
+    padding-bottom: 1.5rem;
+}
+
+blockquote p {
+ font-size: 16px;  color:white ;font-family:'Raleway1';
+
+ margin-bottom: 1em;
+ font-weight: 300;
+ font-style: normal;
+ line-height: 1.6;}
+ 
+ 
+blockquote footer {
+    display: block;
+ 
+    line-height: 1.42857143;
+    color: #777;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

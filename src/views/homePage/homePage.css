@@ -1,0 +1,41 @@
+#section_about{
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+}
+.pb-40 {
+    padding-bottom: 1.5rem;
+}
+
+blockquote p {
+ font-size: 16px;  color:white ;font-family:'Raleway1';
+
+ margin-bottom: 1em;
+ font-weight: 300;
+ font-style: normal;
+ line-height: 1.6;}
+ 
+ .linkabout{
+ 
+    font-size: 21px;
+    color: white;
+    font-family: 'Raleway1';
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 0.6;
+    letter-spacing: 2px;
+    position: relative;
+    top: -1px;
+
+ }
+blockquote footer {
+    display: block;
+ 
+    line-height: 1.42857143;
+    color: #777;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

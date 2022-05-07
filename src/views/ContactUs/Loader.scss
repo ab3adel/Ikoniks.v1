@@ -1,0 +1,95 @@
+$size : 30px;
+$yellow_light :  #03aac1e0;
+$yellow : #eb2c64e0;
+$yellow_dark : #999999e0;
+$duration : 2s;
+
+
+.loaderCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#333333c7, #00000000);
+    // transform: translateY(-45px );
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+@mixin psuedo {
+  display: block;
+  content: "";
+}
+
+.loader {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: $size * 3;
+  height: $size * 3;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotate(45deg);
+}
+
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $size;
+  height: $size;
+  background: $yellow_light;
+  box-shadow: $size*3.75 $size*3.75 20px #00000090;
+  animation: move $duration ease-in-out infinite both;
+  transform-style: preserve-3d;
+  
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation-delay:( $i/2) * -$duration;
+    }
+  }
+  
+  &:before, &:after {
+    @include psuedo;
+    position: absolute;
+    width: $size;
+    height: $size;
+  }
+  &:before {
+    top: 100%;
+    left: 0;
+    background: $yellow;
+    transform-origin: center top;
+    transform: rotateX(-90deg);
+    animation: moveColor $duration ease-in-out infinite both;
+    // transform-style: preserve-3d;
+  }
+  &:after {
+    top: 0;
+    left: 100%;
+    background: $yellow_dark;
+    transform-origin: center left;
+    transform: rotateY(90deg);
+    animation: moveColor2 $duration ease-in-out infinite both;
+  }
+}
+
+@keyframes move {
+  0%, 100% { transform: none; }
+  12.5% { transform: translate($size, 0); }
+  25% { transform: translate($size*2, 0); }
+  37.5% { transform: translate($size*2, $size); }
+  50% { transform: translate($size*2, $size*2);  background: $yellow; 
+    transform: translate(0, 0);
+  }
+  62.5% { transform: translate($size, $size*2); }
+  75% { transform: translate(0, $size*2); }
+  87.5% { transform: translate(0, $size); }
+}
+@keyframes moveColor {
+  0%, 100% {    background: $yellow; 
+    }
+         50% {background: $yellow_light } 
+}
+@keyframes moveColor2 {
+  0%, 100% {   background: $yellow_light   }
+ 50% {background: $yellow; }
+ }
